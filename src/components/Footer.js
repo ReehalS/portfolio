@@ -8,8 +8,8 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
+    <Container className="footer">
+      <Row className="align-items-center">
         <Col md="4" className="footer-copywright">
           <h3>Made by Sandeep Reehal</h3>
         </Col>
@@ -28,7 +28,6 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
-          
           </ul>
         </Col>
       </Row>
