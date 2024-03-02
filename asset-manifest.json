@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e2fe154.css",
-    "main.js": "/static/js/main.16ec6d55.js",
+    "main.css": "/static/css/main.c0ef9501.css",
+    "main.js": "/static/js/main.8ada4ffb.js",
     "static/js/453.60e1d8ed.chunk.js": "/static/js/453.60e1d8ed.chunk.js",
     "static/media/bookfinder.png": "/static/media/bookfinder.8f9e1547b641ad6feba7.png",
+    "static/media/breast-cancer-ROC.png": "/static/media/breast-cancer-ROC.bb7b53c403c477cc07d8.png",
     "static/media/aurebeshtranslator.png": "/static/media/aurebeshtranslator.104ecb161a3cb8618fc3.png",
+    "static/media/bulltrackSTT.png": "/static/media/bulltrackSTT.ab31fd82d6ccea2e603b.png",
     "static/media/bin2dec.png": "/static/media/bin2dec.ab9ae912c05bf52ed6d5.png",
     "index.html": "/index.html",
-    "main.6e2fe154.css.map": "/static/css/main.6e2fe154.css.map",
-    "main.16ec6d55.js.map": "/static/js/main.16ec6d55.js.map",
+    "main.c0ef9501.css.map": "/static/css/main.c0ef9501.css.map",
+    "main.8ada4ffb.js.map": "/static/js/main.8ada4ffb.js.map",
     "453.60e1d8ed.chunk.js.map": "/static/js/453.60e1d8ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e2fe154.css",
-    "static/js/main.16ec6d55.js"
+    "static/css/main.c0ef9501.css",
+    "static/js/main.8ada4ffb.js"
   ]
 }
