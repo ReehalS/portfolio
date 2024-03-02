@@ -8,8 +8,16 @@ import { BsGithub } from "react-icons/bs";
 import bookfinder from "../../Assets/bookfinder.png" ;
 import bin2dec from "../../Assets/bin2dec.png";
 import aurebeshtranslator from "../../Assets/aurebeshtranslator.png";
+import breastCancerImg from "../../Assets/breast-cancer-ROC.png";
+import bulltrackSTT from "../../Assets/bulltrackSTT.png";
 
 const projects = [
+  {
+    imgPath: bulltrackSTT,
+    title: "Speech to Text",
+    description: "App built in React Native to convert speech to text and give an output with Company names and Stock price keywords, built for BullTrack's App.",
+    ghLink: "https://github.com/reehals/BulltrackSTT",
+  },
   {
     imgPath: bookfinder,
     title: "BookFinder",
@@ -25,12 +33,19 @@ const projects = [
     demoLink: "https://reehals.github.io/aurebeshtranslator/"
   },
   {
+    imgPath: breastCancerImg,
+    title: "Breast Cancer Detection",
+    description: "Comparing 10 different ML models to find the best one for classification of breast cancer",
+    ghLink: "https://github.com/reehals/modelAccuracyTesting",
+  },
+  {
     imgPath: bin2dec,
     title: "Number Base Converter",
     description: "Website to easily convert between numbers of different bases.",
     ghLink: "https://github.com/reehals/bin2dec",
     demoLink: "https://reehals.github.io/bin2dec/"
-  }
+  },
+
 ];
 
 function Projects() {
@@ -39,14 +54,14 @@ function Projects() {
     return (
       <div className="project-card">
         <h3 className="project-card-title">{props.title}</h3>
-        <img className="project-card-img" src={props.imgPath} alt="card-img" />
+        {props.imgPath && <img className="project-card-img" src={props.imgPath} alt="card-img" />}
         
         <p className="project-card-description">{props.description}</p>
         <div className="project-card-btn" style={{wrap: "wrap", justifyContent: "space-around"}}>
-          <Button href={props.demoLink} target="_blank" style={{marginRight: "10px"}}>
+          {props.demoLink && <Button href={props.demoLink} target="_blank" style={{marginRight: "10px"}}>
             <CgWebsite /> &nbsp;
             Demo
-          </Button>
+          </Button>}
           <Button href={props.ghLink} target="_blank" style={{marginLeft: "10px"}}>
             <BsGithub /> &nbsp;
             GitHub

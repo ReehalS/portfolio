@@ -5,6 +5,9 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
+      <h1 className="blue" style={{paddingBottom: "10px"}}> 
+      About Me
+      </h1>
         <blockquote className="blockquote">
           <p style={{ textAlign: "justify" }}>
             I am a Computer Engineering Student at UC Davis who is passionate about <span className="blue">Web and App development.  </span>

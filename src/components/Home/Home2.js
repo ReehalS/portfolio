@@ -11,7 +11,7 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2em" }} className="blue">
+          <h1 style={{ fontSize: "2em"}} className="blue">
               About Me
             </h1>
             <p className="home-about-body">
