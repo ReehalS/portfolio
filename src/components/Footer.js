@@ -1,24 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col } from "react-bootstrap";
+import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container className="footer">
-      <Row className="align-items-center">
-        <Col md="4" className="footer-copywright">
-          <h3>Made by Sandeep Reehal</h3>
+    <div className="footer">
+      <Row>
+        <Col md="4" className="footer-madeby">
+          <h3>Designed and Devloped by Sandeep Reehal</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md="4"className="footer-copywright" >
           <h3>Copyright © {year} SR</h3>
         </Col>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
               <a
                 href="https://github.com/reehals"
                 style={{ color: "white" }}
@@ -27,11 +24,10 @@ function Footer() {
               >
                 <AiFillGithub />
               </a>
-            </li>
-          </ul>
         </Col>
       </Row>
-    </Container>
+    </div>
+
   );
 }
 

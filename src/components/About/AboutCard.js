@@ -7,10 +7,17 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote">
           <p style={{ textAlign: "justify" }}>
-            I am <span className="blue">Sandeep Reehal </span>
-            from <span className="blue"> Davis, California.</span>
+            I am a Computer Engineering Student at UC Davis who is passionate about <span className="blue">Web and App development.  </span>
             <br />
-            I am a <span className="blue">Computer Engineering </span> sophomore at UC Davis.
+            I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
+            <br />
+            <br />I am fluent in languages like
+            <span className="blue"> C++, Javascript, Python, HTML and CSS </span>
+            ,              
+            <br /> And frameworks like
+            <span className="blue"> React.js, Node.js, React Native, and Express.js </span>
+            .
+            <br />
             <br />
           </p>
         </blockquote>

@@ -1,7 +1,9 @@
 html {
-  --section-background-color: #03002e;
-  --image-gradient: #03002e;
+  --section-background-color: rgba(8, 0, 92, 0.6);
+  --image-gradient: rgb(0, 0, 25, 0.6);
   --imp-text-color: rgb(0, 250, 250); 
+
+  width: 100%;
 }
 
 .blue {
@@ -28,7 +30,7 @@ button:focus {
 }
 
 #preloader-none {
-  opacity: 100%;
+  opacity: 90%;
 }
 
 #no-scroll {
@@ -63,16 +65,19 @@ button:focus {
 
 .navbar {
   position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  padding-left: 5%;
-  height: 5%;
-  width: 100%;
+  font-size: 3rem !important;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
+  
+  right:0;
   font-size: 1.2rem !important;
-  background-color: #0d026b8a;
+  background-color: #0d026b39;  
   z-index: 999 !important;
+  width: auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 @media (max-width: 767px) {
   .navbar {
@@ -84,20 +89,14 @@ button:focus {
     display: none !important;
   }
 }
-.navbar-brand {
-  color: rgb(250, 250, 250) !important;
-}
 
-.logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
-}
+
 
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
-  margin-top: 0.5rem !important;
+  padding-right: 2rem !important;
 }
 
 
@@ -108,18 +107,18 @@ button:focus {
 }
 
 
-
-
 /* --------- */
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; 
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
   display: inline-block;
 }
+
+
 
 @keyframes wave-animation {
   0% {
@@ -162,11 +161,12 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
+  background-image: var(--image-gradient);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-  background-image: var(--section-background-color) !important;
+  
 }
 
 .home-content {
@@ -177,13 +177,14 @@ button:focus {
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-left: 50px;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 50px;
 }
+
 
 .main-name {
   color: var(--imp-text-color) !important;
@@ -193,6 +194,7 @@ button:focus {
   font-size: 2.2em !important;
   color: var(--imp-text-color) !important;
   font-weight: 600 !important;
+  padding:0 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
@@ -223,18 +225,19 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  padding-left: 50px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 80px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  width: 100%;
 }
 
 .home-about-body {
   padding-top: 20px;
-  padding-left: 5%;
   font-size: 1.2em !important;
   text-align: left;
 }
@@ -298,47 +301,41 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #03002e !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(4, 2, 46);
+  background-color: rgb(10, 4, 22);
+
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 
-}
-
-.footer .row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  width: 100%;
+  height: 5vh;
+  padding: 5%;
+  margin: 0;
+}
+.footer-madeby, .footer-copywright , .footer-body{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.footer-copywright {
-  text-align: center;
+.footer-madeby{
+  text-align: left;
 }
 
-.footer-body {
-  z-index: 1;
-  text-align: center !important;
+.footer-body{
+  text-align: right;
 }
 
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
-}
 
 .footer h3 {
   font-size: 1em;
@@ -352,71 +349,77 @@ button:focus {
   padding: 0 !important;
 }
 
-.blockquote-footer {
-  color: #a588c0 !important;
-}
-
-blockquote{
-  font-size: 1.5em;
-}
-
 
 /* --------- */
 /* Projects */
 /* --------- */
+.project-container{
+  min-height: 95vh;
+}
+
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 1% !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-right:5%;
+  
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  margin-right: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   margin-bottom: 10px !important;
-  height: auto !important;
+
+  width: 26%;
+  height: auto;
+  
+  box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459) !important;
+  color: white !important;
+  background-color: #06005877 !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-card-description {
+  font-size: 1em !important;
+  color: white !important;
 }
 
 .project-card-title{
   color: white !important;
-  font-size: 2.3em !important;
+  font-size: 2em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
 
+  justify-content: baseline !important;
 }
 
 .project-card-img {
-  padding: 20px !important;
   opacity: 0.9 !important;
   border-radius: 10px !important;
-  width: 800px !important;
-}
-
-.project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
+  max-width: 95% !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-  margin-Bottom: 10px;
+
+  align-self: center !important;
 }
-.project-card-view:hover {
+.project-card:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
 }
 
-.project-card-view Button{
+.project-card-button{
   padding: 10px;
-  margin: 10px;
-}
-.card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
+  margin: 20px;
+  align-self: flex-end;
 }
 
 .btn-primary {
@@ -438,7 +441,7 @@ blockquote{
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
+  padding-top: 5% !important;
 }
 
 /* --------- */
@@ -451,6 +454,10 @@ blockquote{
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+}
+
+.blockquote{
+  min-width: 100vh;
 }
 
 .tech-icons {
@@ -492,6 +499,7 @@ blockquote{
   border: none !important;
   color: white !important;
   background-color: transparent !important;
+  margin-bottom:0;
 }
 
 .about-activity {

@@ -7,16 +7,17 @@ import Toolstack from "./Toolstack";
 
 function About() {
   return (
-    <Container fluid className="about-section">
-      <Particle />
+    <Container className="about-section">
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center", padding: "10px" , width: "110%" }}>
           <Col
             md={7}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
+              paddinLeft: "50px",
+              minWidth: "80%",
             }}
           >
             <Aboutcard />

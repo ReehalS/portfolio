@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <Navbar>
       <Container>
-        <Nav className="ml-auto">
+        <Nav>
           <Link to="/" className="nav-link">
             <AiOutlineHome /> Home
           </Link>
