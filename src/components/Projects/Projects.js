@@ -10,6 +10,7 @@ import bin2dec from "../../Assets/bin2dec.png";
 import aurebeshtranslator from "../../Assets/aurebeshtranslator.png";
 import breastCancerImg from "../../Assets/breast-cancer-ROC.png";
 import bulltrackSTT from "../../Assets/bulltrackSTT.png";
+import workoutTracker from "../../Assets/workout-site.png";
 
 const projects = [
   {
@@ -17,6 +18,14 @@ const projects = [
     title: "Speech to Text",
     description: "App built in React Native to convert speech to text and give an output with Company names and Stock price keywords, built for BullTrack's App.",
     ghLink: "https://github.com/reehals/BulltrackSTT",
+    demoPlaceholder: "Demo Unavailable"
+  },
+  {
+    imgPath: workoutTracker,
+    title: "Workout Tracker",
+    description: "App built with React, Express and MongoDB to allow users to track their workouts.",
+    ghLink: "https://github.com/reehals/workout-site",
+    demoPlaceholder: "Demo Coming Soon"
   },
   {
     imgPath: bookfinder,
@@ -62,6 +71,10 @@ function Projects() {
             <CgWebsite /> &nbsp;
             Demo
           </Button>}
+          {props.demoPlaceholder && <Button target="_blank" style={{marginRight: "10px"}}>
+            <CgWebsite /> &nbsp;
+            {props.demoPlaceholder}
+          </Button>}
           <Button href={props.ghLink} target="_blank" style={{marginLeft: "10px"}}>
             <BsGithub /> &nbsp;
             GitHub
@@ -88,6 +101,7 @@ function Projects() {
                 description={project.description}
                 ghLink={project.ghLink}
                 demoLink={project.demoLink}
+                demoPlaceholder={project.demoPlaceholder}
                 />
             )})}
         </div>
