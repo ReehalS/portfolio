@@ -22,7 +22,7 @@ const projects = [
   },
   {
     imgPath: workoutTracker,
-    title: "Workout Tracker",
+    title: "Workout Buddy",
     description: "App built with React, Express and MongoDB to allow users to track their workouts.",
     ghLink: "https://github.com/reehals/workout-site",
     demoPlaceholder: "Demo Coming Soon"
