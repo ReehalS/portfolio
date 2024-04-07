@@ -25,7 +25,7 @@ const projects = [
     title: "Workout Buddy",
     description: "Website built with React, Express and MongoDB to allow users to track their workouts.",
     ghLink: "https://github.com/reehals/workout-site",
-    demoPlaceholder: "Demo Coming Soon"
+    demoLink: "https://workoutbuddy-sr.vercel.app/"
   },
   {
     imgPath: bookfinder,
