@@ -11,8 +11,18 @@ import aurebeshtranslator from "../../Assets/aurebeshtranslator.png";
 import breastCancerImg from "../../Assets/breast-cancer-ROC.png";
 import bulltrackSTT from "../../Assets/bulltrackSTT.png";
 import workoutTracker from "../../Assets/workout-site.png";
+import dcmhImage from "../../Assets/dcmh.png";
+
 
 const projects = [
+  {
+    imgPath: dcmhImage,
+    title: "Donation and Inventory Manager",
+    description: "The website facilitates both online monetary donations and in-person item donations for Davis Community Meals and Housing (DCMH), presenting donors with a filtered table showcasing needed items to ensure balanced inventory management. Admin users can track inventory levels and send email notifications for high-need items, enhancing donation management efficiency.",
+    ghLink: "https://github.com/reehals/dcmh_hackdavis",
+    demoLink: "https://dcmh-hackdavis.vercel.app/",
+
+  },
   {
     imgPath: bulltrackSTT,
     title: "Speech to Text",
@@ -28,6 +38,12 @@ const projects = [
     demoLink: "https://workoutbuddy-sr.vercel.app/"
   },
   {
+    imgPath: breastCancerImg,
+    title: "Breast Cancer Detection",
+    description: "Comparing 10 different ML models to find the best one for classification of breast cancer",
+    ghLink: "https://github.com/reehals/modelAccuracyTesting",
+  },
+  {
     imgPath: bookfinder,
     title: "BookFinder",
     description: "Website to easily find diffrent books and their details.",
@@ -40,12 +56,6 @@ const projects = [
     description: "Website to translate between English and Aurebesh, the written language of Star Wars.",
     ghLink: "https://github.com/reehals/aurebeshtranslator",
     demoLink: "https://reehals.github.io/aurebeshtranslator/"
-  },
-  {
-    imgPath: breastCancerImg,
-    title: "Breast Cancer Detection",
-    description: "Comparing 10 different ML models to find the best one for classification of breast cancer",
-    ghLink: "https://github.com/reehals/modelAccuracyTesting",
   },
   {
     imgPath: bin2dec,

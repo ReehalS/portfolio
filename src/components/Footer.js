@@ -10,7 +10,7 @@ function Footer() {
     <div className="footer">
       <Row>
         <Col md="4" className="footer-madeby">
-          <h3>Designed and Devloped by Sandeep Reehal</h3>
+          <h3>Designed and Developed by Sandeep Reehal</h3>
         </Col>
         <Col md="4"className="footer-copywright" >
           <h3>Copyright © {year} SR</h3>

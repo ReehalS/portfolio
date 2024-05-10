@@ -8,6 +8,7 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
+  DiJava
 } from "react-icons/di";
 import {
   SiPostgresql,
@@ -19,6 +20,10 @@ function Techstack() {
       <div className="tech-icons">
         <CgCPlusPlus />
         <p>C/C++</p>
+      </div>
+      <div className="tech-icons">
+        <DiJava />
+        <p>Java</p>
       </div>
       <div className="tech-icons">
         <DiJavascript1 />

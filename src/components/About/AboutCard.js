@@ -15,10 +15,10 @@ function AboutCard() {
             I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
             <br />
             <br />I am fluent in languages like
-            <span className="blue"> C++, Javascript, Python, HTML and CSS </span>
+            <span className="blue"> C++, Java, Javascript, and Python </span>
             ,              
             <br /> And frameworks like
-            <span className="blue"> React.js, Node.js, React Native, and Express.js </span>
+            <span className="blue"> React.js, Node.js, React Native, and Express.js</span>
             .
             <br />
             <br />

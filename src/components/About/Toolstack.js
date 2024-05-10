@@ -4,6 +4,8 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
+  SiFigma,
+  SiTermius
 } from "react-icons/si";
 
 function Toolstack() {
@@ -20,6 +22,14 @@ function Toolstack() {
       <div className="tech-icons">
         <SiSlack />
         <p>Slack</p>
+      </div>
+      <div className="tech-icons">
+        <SiFigma />
+        <p>Figma</p>
+      </div>
+      <div className="tech-icons">
+        <SiTermius />
+        <p>Termius</p>
       </div>
     </Container>
   );

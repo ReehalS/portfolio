@@ -4,6 +4,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiDevpost } from "react-icons/si";
 
 function Home2() {
   return (
@@ -20,10 +21,10 @@ function Home2() {
               I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
               <br />
               <br />I am fluent in languages like
-              <b className="blue"> C++, Javascript, Python, HTML and CSS </b>
+              <b className="blue"> C++, Java, Javascript, and Python</b>
               ,
               <br /> And frameworks like
-              <b className="blue"> React.js, Node.js, React Native, and Express.js </b>
+              <b className="blue"> React.js, Node.js, React Native, and Express.js</b>.
               <br />
               <br />
               I am also a huge Star Wars fan and love to incorporate it into my projects.
@@ -53,6 +54,16 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://devpost.com/sreehal"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiDevpost />
                 </a>
               </li>
             </ul>
