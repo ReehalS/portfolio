@@ -380,7 +380,7 @@ button:focus {
   padding-top: 20px;
   padding-bottom: 10px;
 
-  width: 26%;
+  min-width: 30%;
   
   box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459) !important;
   color: white !important;

@@ -18,7 +18,8 @@ const projects = [
   {
     imgPath: dcmhImage,
     title: "Donation and Inventory Manager",
-    description: "The website facilitates both online monetary donations and in-person item donations for Davis Community Meals and Housing (DCMH), presenting donors with a filtered table showcasing needed items to ensure balanced inventory management. Admin users can track inventory levels and send email notifications for high-need items, enhancing donation management efficiency.",
+    extra: "HackDavis 2024 Prize Winner",
+    description: "A website that facilitates both online monetary donations and in-person item donations for Davis Community Meals and Housing (DCMH), presenting donors with a filtered table showcasing needed items to ensure balanced inventory management. Admin users can track inventory levels and send email notifications for high-need items, enhancing donation management efficiency.",
     ghLink: "https://github.com/reehals/dcmh_hackdavis",
     demoLink: "https://dcmh-hackdavis.vercel.app/",
 
@@ -74,8 +75,10 @@ function Projects() {
       <div className="project-card">
         <h3 className="project-card-title">{props.title}</h3>
         {props.imgPath && <img className="project-card-img" src={props.imgPath} alt="card-img" />}
-        
-        <p className="project-card-description">{props.description}</p>
+
+        {props.extra && <p className="project-card-description">{props.extra}</p>}
+
+        {props.description && <p className="project-card-description">{props.description}</p>}
         <div className="project-card-btn" style={{wrap: "wrap", justifyContent: "space-around"}}>
           {props.demoLink && <Button href={props.demoLink} target="_blank" style={{marginRight: "10px"}}>
             <CgWebsite /> &nbsp;
@@ -106,9 +109,11 @@ function Projects() {
           {projects.map((project, index) => {
             return (
               <Card
+                key={index}
                 imgPath={project.imgPath}
                 title={project.title}
                 description={project.description}
+                extra={project.extra}
                 ghLink={project.ghLink}
                 demoLink={project.demoLink}
                 demoPlaceholder={project.demoPlaceholder}
