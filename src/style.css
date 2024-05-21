@@ -6,6 +6,7 @@ html {
   --secondary-color-text: #FFFFFF;
   --third-color: #41414A;
   --third-color-text: #FFFFFF;
+  --primary-color-hover: #9CCDCA;
 /*
   --primary-color: #37637F;
   --secondary-color: #BDEFF8;
@@ -14,6 +15,7 @@ html {
   --primary-color-hover: #37637F;
 */
   width: 100%;
+  max-width: 100%;
 }
 
 .blue {
@@ -51,7 +53,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 
 /* Track */
@@ -65,11 +67,6 @@ button:focus {
   border-radius: 12px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color-hover);
-  border-radius: 12px;
-}
 
 /* --------- */
 /* Navbar Section  */
@@ -95,7 +92,6 @@ button:focus {
   align-items: center;
   width: 100%;
   color: var(--secondary-color-text);
-
 }
 
 @media (max-width: 767px) {
@@ -613,4 +609,8 @@ button:focus {
   .about-img {
     padding-top: 0 !important;
   }
+}
+
+*{
+  max-width: 100%;
 }
