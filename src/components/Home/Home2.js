@@ -16,7 +16,7 @@ function Home2() {
               About Me
             </h1>
             <p className="home-about-body">
-              I am a Computer Engineering Student at UC Davis who is passionate about <b className="blue">Web and App development.  </b>
+              I am a Computer Science and Engineering Student at UC Davis who is passionate about <b className="blue">Machine Learning and Web development.  </b>
               <br />
               I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
               <br />

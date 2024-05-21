@@ -99,10 +99,10 @@ function Projects() {
 
   return (
       <div className="project-container">
-        <h1 className="project-heading blue">
+        <h1 className="project-heading">
           My Recent Works
         </h1>
-        <p style={{ color: "white" }}>
+        <p className="project-subheading">
           Here are a few projects I've worked on recently.
         </p>
         <div className="project-section">

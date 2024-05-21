@@ -13,14 +13,14 @@ function NavBar() {
   return (
     <Navbar>
       <Container>
-        <Nav>
-          <Link to="/" className="nav-link">
+        <Nav className="navbar-buttons">
+          <Link to="/" className="nav-link black">
             <AiOutlineHome /> Home
           </Link>
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link black">
             <AiOutlineUser /> About
           </Link>
-          <Link to="/project" className="nav-link">
+          <Link to="/project" className="nav-link black">
             <AiOutlineFundProjectionScreen /> Projects
           </Link>
         </Nav>

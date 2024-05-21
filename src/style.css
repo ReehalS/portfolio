@@ -1,13 +1,27 @@
 html {
-  --section-background-color: rgba(8, 0, 92, 0.6);
-  --image-gradient: rgb(0, 0, 25, 0.6);
-  --imp-text-color: rgb(0, 250, 250); 
-
+  
+  --primary-color: #B4F6EE;
+  --secondary-color: #528BEE;
+  --primary-color-text: #000000;
+  --secondary-color-text: #FFFFFF;
+  --third-color: #41414A;
+  --third-color-text: #FFFFFF;
+/*
+  --primary-color: #37637F;
+  --secondary-color: #BDEFF8;
+  --primary-color-text: #FFFFFF;
+  --secondary-color-text: #000000;
+  --primary-color-hover: #37637F;
+*/
   width: 100%;
 }
 
 .blue {
-  color: var(--imp-text-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.black {
+  color: var(--secondary-color-text) !important;
 }
 
 button:focus {
@@ -24,9 +38,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #03002e;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--primary-color);
 }
 
 #preloader-none {
@@ -44,18 +56,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(2, 6, 84, 0.8);
+  background: var(--secondary-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(2, 6, 84, 0.959);
+  background: var(--primary-color);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(2, 6, 84, 0.959);
+  background: var(--primary-color-hover);
   border-radius: 12px;
 }
 
@@ -68,15 +80,22 @@ button:focus {
   font-size: 3rem !important;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
   
-  right:0;
+  left:0;
   font-size: 1.2rem !important;
-  background-color: #0d026b98;  
+  background-color: var(--secondary-color);  
   z-index: 999 !important;
-  width: auto;
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  display: inline;
+  justify-self: right; 
+  color: var(--secondary-color-text);
+}
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  color: var(--secondary-color-text);
+
 }
 
 @media (max-width: 767px) {
@@ -91,10 +110,11 @@ button:focus {
 
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--secondary-color-text) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
   padding-right: 2rem !important;
+  color: var(--secondary-color-text);
 }
 
 
@@ -114,6 +134,7 @@ button:focus {
   animation-iteration-count: infinite; 
   transform-origin: 70% 70%; 
   display: inline-block;
+  
 }
 
 
@@ -159,17 +180,17 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  background-color: var(--primary-color);
   
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   text-align: left;
 }
 
@@ -185,18 +206,18 @@ button:focus {
 
 
 .main-name {
-  color: var(--imp-text-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: var(--imp-text-color) !important;
+  color: var(--secondary-color) !important;
   font-weight: 600 !important;
   padding:0 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: var(--imp-text-color) !important;
+  color: var(--primary-color-text) !important;
 }
 
 @media (max-width: 767px) {
@@ -216,12 +237,12 @@ button:focus {
   padding-bottom: 70px !important;
   padding-top: 70px !important;
   padding-left: 50px !important;
-
+  background-color: var(--primary-color) !important;
   word-wrap: break-word !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--primary-color-text) !important;
   padding-top: 80px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -232,15 +253,14 @@ button:focus {
   padding-top: 20px;
   font-size: 1.2em !important;
   text-align: left;
-
-  
   overflow-wrap: break-word !important;
+  color: var(--primary-color-text) !important;
 }
 
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: var(--secondary-color) !important;
 }
 
 .home-about-social-links {
@@ -259,7 +279,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--secondary-color) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -272,7 +292,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #0e0161;
+  background: var(--primary-color) !important;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -280,13 +300,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #0d036a;
+  box-shadow: 0 0 15px var(--primary-color-hover);
 }
 
 .home-social-icons:hover {
   color: #120395;
-  box-shadow: 0 0 5px #2b1f95;
-  text-shadow: 0 0 2px #2b1f95;
+  box-shadow: 0 0 5px var(--secondary-color-hover);
+  text-shadow: 0 0 2px var(--secondary-color);
 }
 
 .social-icons {
@@ -296,14 +316,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #03002e !important;
+  color: var(--primary-color) !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--secondary-color);
 
   bottom: 0 !important;
   padding-top: 10px !important;
@@ -316,18 +336,22 @@ button:focus {
   width: 100%;
   padding: 5%;
   margin: 0;
+  color: var(--secondary-color-text);
 }
 .footer-madeby, .footer-copywright , .footer-body{
   margin: 0 !important;
   padding: 0 !important;
+  color: var(--secondary-color-text) !important;
 }
 
 .footer-madeby{
   text-align: left;
+  color: var(--secondary-color-text);
 }
 
 .footer-body{
   text-align: right;
+  color: var(--secondary-color-text);
 }
 
 @media (max-width: 767px) {
@@ -339,7 +363,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--secondary-color-text) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -347,6 +371,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
+  color: var(--secondary-color-text) !important;
 }
 
 
@@ -355,13 +380,14 @@ button:focus {
 /* --------- */
 .project-container{
   min-height: 95vh;
+  background-color: var(--primary-color);
 }
 
 .project-section {
   position: relative !important;
   padding-top: 1% !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: var(--primary-color) !important;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -383,8 +409,8 @@ button:focus {
   min-width: 30%;
   
   box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459) !important;
-  color: white !important;
-  background-color: #06005877 !important;
+  color: var(--secondary-color-text) !important;
+  background-color: var(--secondary-color) !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   
@@ -436,11 +462,11 @@ button:focus {
 
 .project-card-description {
   font-size: 1em !important;
-  color: white !important;
+  color: var(--secondary-color-text) !important;
 }
 
 .project-card-title{
-  color: white !important;
+  color: var(--secondary-color-text) !important;
   font-size: 2em !important;
   font-weight: 500 !important;
 
@@ -466,55 +492,95 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #02006c !important;
-  border-color: #090099 !important;
+  color: var(--third-color-text) !important;
+  background-color: var(--third-color) !important;
+  border-color: var(--primary-color-hover) !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #02006c !important;
-  border-color: #090099 !important;
+  color: var(--primary-color-text) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color-hover) !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 5% !important;
+  color: var(--primary-color-text)
+}
+
+.project-subheading {
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  padding-top: 1% !important;
+  color: var(--primary-color-text)
 }
 
 /* --------- */
 /* About */
 /* --------- */
 
+.about-div {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color-text) !important;
+} 
+
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
-
-  
+  background-image: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color-text) !important;
+  width: 100%;
+  align-items: center;
 }
 
+.about-about-section {
+  background-color: var(--primary-color) !important;
+  word-wrap: break-word !important;
+
+}
+
+.about-heading {
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 5% !important;
+  color: var(--primary-color-text)
+
+}
+
+.about-text {
+  padding-top: 20px;
+  font-size: 1.2em !important;
+  text-align: justify;
+  overflow-wrap: break-word !important;
+  color: var(--primary-color-text) !important;
+}
 
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(26, 38, 144, 0.637) !important;
+  border: 1.7px solid var(--primary-color-hover) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(0, 0, 139, 0.5)  !important;
+  box-shadow: 4px 5px 4px 3px var(--secondary-color)  !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+.textABout{
+  font-size: 1.1em !important;
+  color: var(--primary-color-text) !important;
+  margin: 10px !important;
+  padding: 10px !important;
 }
 
 .tech-icons p{
@@ -530,18 +596,11 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(22, 6, 124, 0.883) !important;
+  border: 2.2px solid rgba(6, 69, 124, 0.584) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
-}
-
-.quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
-  margin-bottom:0;
 }
 
 .about-activity {

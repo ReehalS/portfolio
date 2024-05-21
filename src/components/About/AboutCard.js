@@ -1,31 +1,30 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
+    <div className="about-about-section">
+      <div>
       <h1 className="blue" style={{paddingBottom: "10px"}}> 
       About Me
       </h1>
-        <blockquote className="blockquote">
-          <p style={{ textAlign: "justify" }}>
-            I am a Computer Engineering Student at UC Davis who is passionate about <span className="blue">Web and App development.  </span>
+        <blockquote >
+          <p className="about-text" >
+            I am a Computer Engineering Student at UC Davis who is passionate about <strong className="blue">Machine Learning and Web development. </strong>
             <br />
             I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
             <br />
             <br />I am fluent in languages like
-            <span className="blue"> C++, Java, Javascript, and Python </span>
+            <strong className="blue"> C++, Java, Javascript, and Python </strong>
             ,              
             <br /> And frameworks like
-            <span className="blue"> React.js, Node.js, React Native, and Express.js</span>
+            <strong className="blue"> React.js, Node.js, React Native, and Express.js</strong>
             .
             <br />
             <br />
           </p>
         </blockquote>
-      </Card.Body>
-    </Card>
+      </div>
+    </div>
   );
 }
 

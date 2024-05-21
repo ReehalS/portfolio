@@ -18,7 +18,6 @@ function Footer() {
         <Col md="4" className="footer-body">
               <a
                 href="https://github.com/reehals"
-                style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
