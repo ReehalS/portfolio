@@ -14,13 +14,14 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
+import HomeLayout from "./components/Layouts/homeLayout";
 function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,12 +34,13 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route index element={<Home/>} />
-          <Route path="home" element={<Home />} />
-          <Route path="project" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<Navigate to="/home"/>} />
-          
+          <Route path="/portfolio" element={<HomeLayout/>}>
+            <Route index element={<Home/>} />
+            <Route path="home" element={<Home />} />
+            <Route path="project" element={<Projects />} />
+            <Route path="about" element={<About />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/portfolio"/>} />
         </Routes>
         <Footer />
       </div>
