@@ -6,7 +6,7 @@ import Toolstack from "./Toolstack";
 
 function About() {
   return (
-    <div className="about-div">
+    <div className="about-div" style={{overflowX: "clip", paddingBottom:"40px"}}>
     <div className="about-section">
       <div>
         <Row className="textABout" style={{ justifyContent: "center", width: "100%" }}>
@@ -14,8 +14,8 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
+              paddingTop: "20px",
+              paddingBottom: "20px",
               paddingLeft: "50px",
               paddingRight: "50px",
               minWidth: "80%",
@@ -25,7 +25,7 @@ function About() {
           </Col>
         </Row>
         <h1 className="about-heading">
-          Professional Skillset
+          Languages, Frameworks, and Libraries I use
         </h1>
         <Techstack />
 
