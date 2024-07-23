@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a9c9823.css",
-    "main.js": "/static/js/main.a737f6a3.js",
+    "main.css": "/static/css/main.6c8ec30f.css",
+    "main.js": "/static/js/main.a8a7bd03.js",
     "static/media/dcmh.png": "/static/media/dcmh.5e024b7f0c804a488ac4.png",
     "static/media/bookfinder.png": "/static/media/bookfinder.8f9e1547b641ad6feba7.png",
     "static/media/breast-cancer-ROC.png": "/static/media/breast-cancer-ROC.bb7b53c403c477cc07d8.png",
@@ -10,11 +10,11 @@
     "static/media/bulltrackSTT.png": "/static/media/bulltrackSTT.ab31fd82d6ccea2e603b.png",
     "static/media/bin2dec.png": "/static/media/bin2dec.ab9ae912c05bf52ed6d5.png",
     "index.html": "/index.html",
-    "main.7a9c9823.css.map": "/static/css/main.7a9c9823.css.map",
-    "main.a737f6a3.js.map": "/static/js/main.a737f6a3.js.map"
+    "main.6c8ec30f.css.map": "/static/css/main.6c8ec30f.css.map",
+    "main.a8a7bd03.js.map": "/static/js/main.a8a7bd03.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a9c9823.css",
-    "static/js/main.a737f6a3.js"
+    "static/css/main.6c8ec30f.css",
+    "static/js/main.a8a7bd03.js"
   ]
 }
