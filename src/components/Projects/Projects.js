@@ -12,9 +12,17 @@ import breastCancerImg from "../../Assets/breast-cancer-ROC.png";
 import bulltrackSTT from "../../Assets/bulltrackSTT.png";
 import workoutTracker from "../../Assets/workout-site.png";
 import dcmhImage from "../../Assets/dcmh.png";
-
+import nilayHealth from "../../Assets/nilayHealth.png";
 
 const projects = [
+  {
+    imgPath: nilayHealth,
+    title: "Nilay Health",
+    description: "Website to help hospitals track patient medications and appointments, message patients reminding them of appointments and generate Prescriptions after appointments.",
+    ghLink: "",
+    demoPlaceholder: "Demo Coming Soon"
+     
+  },
   {
     imgPath: dcmhImage,
     title: "Donation and Inventory Manager",
@@ -26,7 +34,7 @@ const projects = [
   },
   {
     imgPath: bulltrackSTT,
-    title: "Speech to Text",
+    title: "Speech to Text Converter",
     description: "App built in React Native to convert speech to text and give an output with Company names and Stock price keywords, built for BullTrack's App.",
     ghLink: "https://github.com/reehals/BulltrackSTT",
     demoPlaceholder: "Demo Unavailable"
