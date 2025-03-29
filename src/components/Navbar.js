@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -14,13 +14,31 @@ function NavBar() {
     <Navbar>
       <Container>
         <Nav className="navbar-buttons">
-          <Link to="/portfolio/home" className="nav-link black">
+          <Link
+            to="home"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            className="nav-link"
+          >
             <AiOutlineHome /> Home
           </Link>
-          <Link to="/portfolio/about" className="nav-link black">
+          <Link
+            to="about"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            className="nav-link"
+          >
             <AiOutlineUser /> About
           </Link>
-          <Link to="/portfolio/project" className="nav-link black">
+          <Link
+            to="project"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            className="nav-link"
+          >
             <AiOutlineFundProjectionScreen /> Projects
           </Link>
         </Nav>

@@ -23,7 +23,6 @@ function Footer() {
         </Col>
       </Row>
     </div>
-
   );
 }
 

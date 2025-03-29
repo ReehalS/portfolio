@@ -1,16 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Home2 from "./Home2";
-import Type from "./Type";
+import Typewriter from "typewriter-effect";
 
+
+function Type() {
+  return (
+    <Typewriter 
+      options={{
+        strings: [
+          "Software Developer",
+          "Full Stack Developer",
+          "Open Source Contributor",
+        ],
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 50,
+      }}
+    />
+  );
+}
 
 function Home() {
   return (
     <section>
-      
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
-
           <Row>
             <Col md={7} className="home-header">
               <h1  className="heading">
@@ -34,7 +48,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }

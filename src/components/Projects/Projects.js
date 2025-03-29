@@ -106,7 +106,7 @@ function Projects() {
   }
 
   return (
-      <div className="project-container">
+      <div className="project-container" id="project">
         <h1 className="project-heading">
           My Recent Works
         </h1>

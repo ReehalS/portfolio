@@ -22,15 +22,15 @@ html {
 }
 
 .blue {
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
 }
 
 .black {
-  color: var(--secondary-color-text) !important;
+  color: var(--secondary-color-text);
 }
 
 button:focus {
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 /* --------- */
@@ -76,14 +76,14 @@ button:focus {
 /* --------- */
 
 .navbar {
-  position: fixed !important;
-  font-size: 3rem !important;
-  padding: 1rem 1rem 1rem 1rem !important;
+  position: fixed;
+  font-size: 3rem;
+  padding: 1rem 1rem 1rem 1rem;
   
   left:0;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
   background-color: var(--third-color);  
-  z-index: 999 !important;
+  z-index: 999;
   width: 100%;
   display: inline;
   justify-self: right; 
@@ -99,30 +99,30 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
+    padding: 1rem 2rem;
     width: 100%;
     height: 10%;
   }
  
 }
 
-
-
 .navbar-nav .nav-link {
-  color: var(--third-color-text) !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
-  padding-right: 2rem !important;
+  color: var(--third-color-text); 
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
   color: var(--third-color-text);
 }
 
-
 @media (max-width: 767px) {
   .nav-link {
-    padding: 0.7rem 1rem !important;
+    padding: 0.7rem 1rem;
   }
 }
 
+.navbar-buttons .nav-link.active {
+  color: var(--secondary-color) !important;
+}
 
 /* --------- */
 /* Home section */
@@ -136,15 +136,13 @@ button:focus {
   
 }
 
-
-
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -159,21 +157,21 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
 }
 #tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 80px;
 }
 
 .home-section {
@@ -181,108 +179,108 @@ button:focus {
   z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 30px;
+  padding-top: 30px;
   background-color: var(--primary-color);
   
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 2rem;
   color: rgb(0, 0, 0);
   text-align: left;
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 2.4em;
   padding-left: 50px;
   color: var(--primary-color-text)
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 2.5em;
   padding-left: 50px;
-  color: var(--primary-color-text) !important;
+  color: var(--primary-color-text);
 }
 
 
 .main-name {
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: var(--secondary-color) !important;
-  font-weight: 600 !important;
-  padding:0 !important;
+  font-size: 2.2em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding:0;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: var(--primary-color-text) !important;
+  font-size: 2.4em;
+  color: var(--primary-color-text);
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
   }
   .Typewriter__cursor {
-    display: none !important;
+    display: none;
   }
 }
 
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
-  padding-left: 50px !important;
-  background-color: var(--primary-color) !important;
-  word-wrap: break-word !important;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  padding-left: 50px;
+  background-color: var(--primary-color);
+  word-wrap: break-word;
 }
 
 .home-about-description {
-  color: var(--primary-color-text) !important;
-  padding-top: 80px !important;
-  padding-bottom: 20px !important;
+  color: var(--primary-color-text);
+  padding-top: 80px;
+  padding-bottom: 20px;
   text-align: center;
   width: 100%;
 }
 
 .home-about-body {
   padding-top: 20px;
-  font-size: 1.2em !important;
+  font-size: 1.2em;
   text-align: left;
-  overflow-wrap: break-word !important;
-  color: var(--primary-color-text) !important;
+  overflow-wrap: break-word;
+  color: var(--primary-color-text);
 }
 
 .home-about-social {
-  text-align: center !important;
+  text-align: center;
   padding-top: 25px;
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
 }
 
 .home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
+  justify-content: center;
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  padding-inline-start: 0;
 }
 
 .home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: var(--secondary-color) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 2em;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .home-social-icons::before {
@@ -293,7 +291,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: var(--primary-color) !important;
+  background: var(--primary-color);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -311,13 +309,13 @@ button:focus {
 }
 
 .social-icons {
-  display: inline-block !important;
+  display: inline-block;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 .icon-colour {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 /* --------- */
@@ -326,27 +324,25 @@ button:focus {
 .footer {
   background-color: var(--third-color);
 
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px ;
 
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: space-between;
   width: 100%;
-  padding: 5%;
-  margin: 0;
+  padding: 25px;
   color: var(--secondary-color-text);
 }
+
 .footer-madeby, .footer-copywright , .footer-body{
-  margin: 0 !important;
-  padding: 0 !important;
-  color: var(--secondary-color-text) !important;
+  color: var(--secondary-color-text);
 }
 
 .footer-madeby{
-  text-align: left;
+  text-align: center;
   color: var(--secondary-color-text);
 }
 
@@ -357,22 +353,17 @@ button:focus {
 
 @media (max-width: 767px) {
   .footer-madeby, .footer-copywright , .footer-body{
-    text-align: center !important;
+    text-align: center;
   }
 }
 
-
 .footer h3 {
   font-size: 1em;
-  color: var(--secondary-color-text) !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  color: var(--secondary-color-text);
+
 }
 .footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding: 0 !important;
-  color: var(--secondary-color-text) !important;
+  color: var(--secondary-color-text);
 }
 
 
@@ -385,10 +376,10 @@ button:focus {
 }
 
 .project-section {
-  position: relative !important;
-  padding-top: 1% !important;
-  padding-bottom: 30px !important;
-  background-image: var(--primary-color) !important;
+  position: relative;
+  padding-top: 1%;
+  padding-bottom: 30px;
+  background-image: var(--primary-color);
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -399,9 +390,9 @@ button:focus {
 }
 
 .project-card {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  margin-bottom: 50px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 20px;
@@ -409,22 +400,22 @@ button:focus {
 
   min-width: 30%;
   
-  box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459) !important;
-  color: var(--secondary-color-text) !important;
-  background-color: var(--third-color) !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
+  box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459);
+  color: var(--secondary-color-text);
+  background-color: var(--third-color);
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
   
   display: flex;
   flex-direction: column;
   justify-content: space-between;   
 
-  overflow: hidden !important;
+  overflow: hidden;
 
 }
 @media (max-width: 399px) {
   .project-container {
-    padding-top: 15% !important;
+    padding-top: 15%;
   }
   .project-card {
     width: 100%;
@@ -433,7 +424,7 @@ button:focus {
 
 @media (min-width: 400px) {
   .project-container {
-    padding-top: 15% !important;
+    padding-top: 15%;
   }
 
   .project-card {
@@ -443,7 +434,7 @@ button:focus {
 
 @media (min-width: 900px) {
   .project-container {
-    padding-top: 50px !important;
+    padding-top: 50px;
   }
   .project-card {
     width: 40%;
@@ -452,7 +443,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .project-container {
-    padding-top: 30px !important;
+    padding-top: 30px;
   }
   .project-card {
     width: 25%;
@@ -462,28 +453,28 @@ button:focus {
 
 
 .project-card-description {
-  font-size: 1em !important;
-  color: var(--secondary-color-text) !important;
+  font-size: 1em;
+  color: var(--secondary-color-text);
 }
 
 .project-card-title{
-  color: var(--secondary-color-text) !important;
-  font-size: 2em !important;
-  font-weight: 500 !important;
-
-  justify-content: baseline !important;
+  color: var(--secondary-color-text);
+  font-size: 2em;
+  font-weight: 500;
+  justify-content: baseline;
+  text-align: center;
 }
 
 .project-card-img {
-  border-radius: 10px !important;
-  max-width: 95% !important;
-  max-height: 50% !important;
+  border-radius: 10px;
+  max-width: 95%;
+  max-height: 50%;
 
-  align-self: center !important;
+  align-self: center;
 }
 .project-card:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
+  transform: scale(1.02);
+  overflow: hidden;
 }
 
 .project-card-button{
@@ -493,32 +484,34 @@ button:focus {
 }
 
 .btn-primary {
-  color: var(--primary-color-text) !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color-hover) !important;
+  color: var(--primary-color-text);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color-hover);
 }
 
 .btn-primary:hover {
-  color: var(--primary-color-text) !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color-hover) !important;
+  color: var(--primary-color-text);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color-hover);
 }
 .btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none;
+  box-shadow: none;
 }
 .project-heading {
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 5% !important;
-  color: var(--primary-color-text)
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 5%;
+  color: var(--primary-color-text);
+  text-align: center;
 }
 
 .project-subheading {
-  font-size: 1em !important;
-  font-weight: 500 !important;
-  padding-top: 1% !important;
-  color: var(--primary-color-text)
+  font-size: 1em;
+  font-weight: 500;
+  padding-top: 1%;
+  color: var(--primary-color-text);
+  text-align: center;
 }
 
 /* --------- */
@@ -526,63 +519,57 @@ button:focus {
 /* --------- */
 
 .about-div {
-  background-color: var(--primary-color) !important;
-  color: var(--primary-color-text) !important;
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
 } 
 
 .about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  background-image: var(--primary-color) !important;
-  background-color: var(--primary-color) !important;
-  color: var(--primary-color-text) !important;
+  position: relative;
+  padding-top: 20px;
+  background-image: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
   width: 100%;
   align-items: center;
 }
 
-.about-about-section {
-  background-color: var(--primary-color) !important;
-  word-wrap: break-word !important;
-
-}
-
 .about-heading {
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 2% !important;
-  padding-bottom: 2% !important;
-  color: var(--primary-color-text)
-
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: var(--primary-color-text);
+  text-align: center;
 }
 
 .about-text {
   padding-top: 20px;
-  font-size: 1.2em !important;
+  font-size: 1.2em;
   text-align: justify;
-  overflow-wrap: break-word !important;
-  color: var(--primary-color-text) !important;
+  overflow-wrap: break-word;
+  color: var(--primary-color-text);
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid var(--primary-color-hover) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px var(--secondary-color)  !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  font-size: 4.5em;
+  margin: 15px;
+  padding: 10px;
+  opacity: 0.93;
+  border: 1.7px solid var(--primary-color-hover);
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px var(--secondary-color) ;
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
 }
 
 .textABout{
-  font-size: 1.1em !important;
-  color: var(--primary-color-text) !important;
-  margin: 10px !important;
-  padding: 10px !important;
+  font-size: 1.1em;
+  color: var(--primary-color-text);
+  margin: 10px;
+  padding: 10px;
 }
 
 .tech-icons p{
@@ -591,29 +578,29 @@ button:focus {
 
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    margin: 10px;
   }
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(6, 69, 124, 0.584) !important;
+  transform: scale(1.05);
+  overflow: hidden;
+  border: 2.2px solid rgba(6, 69, 124, 0.584);
 }
 .tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 .about-activity {
-  list-style: none !important;
-  text-align: left !important;
-  padding-left: 1px !important;
+  list-style: none;
+  text-align: left;
+  padding-left: 1px;
 }
 
 @media (max-width: 767px) {
   .about-img {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
 }
 
