@@ -16,11 +16,9 @@ function About() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-          <h1 style={{ fontSize: "2em"}} className="blue">
-              About Me
-            </h1>
+          <h1 className="section-heading">About Me</h1>
             <p className="home-about-body">
-              I am a Computer Science and Engineering Student at UC Davis who is passionate about <b className="blue">Machine Learning and Web development.  </b>
+              I am a Computer Science and Engineering Student at UC Davis who is passionate about <b className="blue">Web Development and Machine Learning.  </b>
               <br />
               I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
               <br />
@@ -35,7 +33,7 @@ function About() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
+            <h1 className="section-heading">Find Me On</h1>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -74,12 +72,12 @@ function About() {
       </Container>
     </Container>
       <div>
-        <h1 className="about-heading">
+        <h1 className="section-heading">
           Languages, Frameworks, and Libraries I Use
         </h1>
         <Techstack />
 
-        <h1 className="about-heading">
+        <h1 className="section-heading">
           Tools I Use
         </h1>
         <Toolstack />

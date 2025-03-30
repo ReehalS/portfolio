@@ -47,10 +47,11 @@ button:focus {
   background-color: var(--third-color);  
   z-index: 999;
   width: 100%;
-  display: inline;
+  display: flex;
   justify-self: right; 
   color: var(--third-color-text);
 }
+
 .navbar-buttons {
   display: flex;
   justify-content: flex-end;
@@ -59,14 +60,6 @@ button:focus {
   color: var(--third-color-text);
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem;
-    width: 100%;
-    height: 10%;
-  }
- 
-}
 
 .navbar-nav .nav-link {
   color: var(--third-color-text); 
@@ -76,9 +69,14 @@ button:focus {
   color: var(--third-color-text);
 }
 
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem;
+@media (max-width: 300px) {
+  .navbar {
+    justify-self: center;
+  }
+  .navbar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -134,13 +132,12 @@ button:focus {
 
 .home-header {
   padding-top: 80px;
+  width: 100%;
 }
 
 .home-section {
   position: relative;
-  z-index: -1;
   background-position: top center;
-  background-repeat: no-repeat;
   padding-bottom: 30px;
   padding-top: 30px;
   background-color: var(--primary-color);
@@ -148,7 +145,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem;
+  padding: 50px 0 1rem;
   color: rgb(0, 0, 0);
   text-align: left;
 }
@@ -164,7 +161,6 @@ button:focus {
   padding-left: 50px;
   color: var(--primary-color-text);
 }
-
 
 .main-name {
   color: var(--secondary-color);
@@ -192,11 +188,16 @@ button:focus {
   }
 }
 
+.typewriterEffect {
+  padding-left: 50px;
+  text-align: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding-bottom: 20px;
   padding-left: 50px;
   background-color: var(--primary-color);
   word-wrap: break-word;
@@ -204,7 +205,7 @@ button:focus {
 
 .home-about-description {
   color: var(--primary-color-text);
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   width: 100%;
@@ -337,18 +338,39 @@ button:focus {
   background-color: var(--primary-color);
 }
 
+.type-select, .location-select, .tech-select {
+  color: var(--primary-color-text);
+  text-align: center;
+  padding-right: 5px;
+}
+
+.type-selector {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+}
+
+.project-filters {
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
 .project-section {
   position: relative;
-  padding-top: 1%;
+  padding-top: 10px;
   padding-bottom: 30px;
   background-image: var(--primary-color);
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-right:10px;
-  margin-left:10px;
-  
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .project-card {
@@ -359,7 +381,6 @@ button:focus {
   margin-right: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
-
   min-width: 30%;
   
   box-shadow: 0 4px 5px 3px rgba(53, 103, 136, 0.459);
@@ -373,11 +394,13 @@ button:focus {
   justify-content: space-between;   
 
   overflow: hidden;
-
+  align-items: center;
+  text-align: center;
 }
+
 @media (max-width: 399px) {
   .project-container {
-    padding-top: 15%;
+    padding-top: 10px;
   }
   .project-card {
     width: 100%;
@@ -386,7 +409,7 @@ button:focus {
 
 @media (min-width: 400px) {
   .project-container {
-    padding-top: 15%;
+    padding-top: 10px;
   }
 
   .project-card {
@@ -396,10 +419,14 @@ button:focus {
 
 @media (min-width: 900px) {
   .project-container {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .project-card {
     width: 40%;
+  }
+  .project-filters {
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 
@@ -412,10 +439,9 @@ button:focus {
   }
 }
 
-
-
 .project-card-description {
   font-size: 1em;
+  padding-top: 10px;
   color: var(--secondary-color-text);
 }
 
@@ -430,7 +456,7 @@ button:focus {
 .project-card-img {
   border-radius: 10px;
   max-width: 95%;
-  max-height: 50%;
+  max-height: 60%;
 
   align-self: center;
 }
@@ -463,7 +489,6 @@ button:focus {
 .project-heading {
   font-size: 2.3em;
   font-weight: 500;
-  padding-top: 5%;
   color: var(--primary-color-text);
   text-align: center;
 }
@@ -471,7 +496,9 @@ button:focus {
 .project-subheading {
   font-size: 1em;
   font-weight: 500;
-  padding-top: 1%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: var(--primary-color-text);
   text-align: center;
 }
@@ -495,23 +522,6 @@ button:focus {
   align-items: center;
 }
 
-.about-heading {
-  font-size: 2.3em;
-  font-weight: 500;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: var(--primary-color-text);
-  text-align: center;
-}
-
-.about-text {
-  padding-top: 20px;
-  font-size: 1.2em;
-  text-align: justify;
-  overflow-wrap: break-word;
-  color: var(--primary-color-text);
-}
-
 .tech-icons {
   font-size: 4.5em;
   margin: 15px;
@@ -525,13 +535,6 @@ button:focus {
   box-shadow: 4px 5px 4px 3px var(--secondary-color) ;
   overflow: hidden;
   transition: all 0.4s ease 0s;
-}
-
-.textABout{
-  font-size: 1.1em;
-  color: var(--primary-color-text);
-  margin: 10px;
-  padding: 10px;
 }
 
 .tech-icons p{
@@ -554,18 +557,15 @@ button:focus {
   line-height: 1.6;
 }
 
-.about-activity {
-  list-style: none;
-  text-align: left;
-  padding-left: 1px;
-}
-
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0;
-  }
-}
-
 *{
   max-width: 100%;
 }
+
+.section-heading {
+  padding-top: 20px;
+  font-size: 2.3em;
+  font-weight: 500;
+  color: var(--primary-color-text);
+  text-align: center;
+}
+

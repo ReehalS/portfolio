@@ -38,6 +38,18 @@ function Techstack() {
         <p>Javascript</p>
       </div>
       <div className="tech-icons">
+        <DiPython />
+        <p>Python</p>
+      </div>
+      <div className="tech-icons">
+        <SiKotlin />
+        <p>Kotlin</p>
+      </div>  
+      <div className="tech-icons">
+        <SiAssemblyscript />
+        <p>RISC-V<strong>,</strong><br/>x86 ASM</p>
+      </div>
+      <div className="tech-icons">
         <DiNodejs />
         <p>Node.js</p>
       </div>
@@ -48,10 +60,6 @@ function Techstack() {
       <div className="tech-icons">
         <SiNextdotjs />
         <p>Next.js</p>
-      </div>
-      <div className="tech-icons">
-        <DiPython />
-        <p>Python</p>
       </div>
       <div className="tech-icons">
         <TbBrandReactNative />
@@ -68,14 +76,6 @@ function Techstack() {
       <div className="tech-icons">
         <DiFirebase />
         <p>Firebase</p>
-      </div>
-      <div className="tech-icons">
-        <SiKotlin />
-        <p>Kotlin</p>
-      </div>  
-      <div className="tech-icons">
-        <SiAssemblyscript />
-        <p>RISC-V<strong>,</strong><br/>x86 ASM</p>
       </div>
       <div className="tech-icons">
         <SiMicropython />
