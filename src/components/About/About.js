@@ -10,7 +10,7 @@ import { SiDevpost } from "react-icons/si";
 
 function About() {
   return (
-    <div className="about-div" style={{overflowX: "clip", paddingBottom:"40px"}} id="about">
+    <div className="about-div" style={{overflowX: "clip", paddingBottom:"40px"}}>
     <div className="about-section">
     <Container fluid className="home-about-section" >
       <Container>

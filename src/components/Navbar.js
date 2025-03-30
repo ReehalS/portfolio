@@ -18,6 +18,7 @@ function NavBar() {
             to="home"
             activeClass="active"
             spy={true}
+            offset={-50}
             duration={500}
             className="nav-link"
           >
@@ -27,6 +28,7 @@ function NavBar() {
             to="about"
             activeClass="active"
             spy={true}
+            offset={-50}
             duration={500}
             className="nav-link"
           >
@@ -36,6 +38,7 @@ function NavBar() {
             to="project"
             activeClass="active"
             spy={true}
+            offset={-50}
             duration={500}
             className="nav-link"
           >

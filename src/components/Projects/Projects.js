@@ -207,7 +207,7 @@ function Projects() {
   });
 
   return (
-    <div className="project-container" id="project">
+    <div className="project-container">
       <h1 className="project-heading">My Recent Work</h1>
       <p className="project-subheading">
         Here is a list of my recent work, you can use the filters below to refine the list by project type, origin, and tech stack.

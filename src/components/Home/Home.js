@@ -23,7 +23,7 @@ function Type() {
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section">
         <Container className="home-content">
           <Col md={7} className="home-header">
             <h1  className="heading">
