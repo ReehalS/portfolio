@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import {
   SiPostman,
   SiSlack,
@@ -11,33 +10,33 @@ import { VscVscode } from "react-icons/vsc";
 
 function Toolstack() {
   return (
-    <Container style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
       <div className="tech-icons">
-        <VscVscode />
+        <VscVscode size={72} className="icon"/>
         <p>VS Code</p>
       </div>
       <div className="tech-icons">
-        <SiGithub />
+        <SiGithub size={72} className="icon"/>
         <p>GitHub</p>
       </div>
       <div className="tech-icons">
-        <SiPostman />
+        <SiPostman size={72} className="icon"/>
         <p>Postman</p>
       </div>
       <div className="tech-icons">
-        <SiSlack />
+        <SiSlack size={72} className="icon"/>
         <p>Slack</p>
       </div>
       <div className="tech-icons">
-        <SiFigma />
+        <SiFigma size={72} className="icon"/>
         <p>Figma</p>
       </div>
       <div className="tech-icons">
-        <SiTermius />
+        <SiTermius size={72} className="icon"/>
         <p>Termius</p>
       </div>
       
-    </Container>
+    </div>
   );
 }
 

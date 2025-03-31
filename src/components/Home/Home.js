@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
 
@@ -22,28 +22,24 @@ function Type() {
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section">
-        <Container className="home-content">
-          <Col md={7} className="home-header">
-            <h1  className="heading">
-              Hi There!{" "}
-              <span className="wave" role="img" aria-labelledby="wave">
-                👋🏻
-              </span>
-            </h1>
+    <div className="home-content">
+      <Col md={7} className="home-header">
+        <h1  className="heading">
+          Hi There!{" "}
+          <span className="wave" role="img" aria-labelledby="wave">
+            👋🏻
+          </span>
+        </h1>
 
-            <h1 className="heading-name">
-              I'm
-              <strong className="main-name"> Sandeep Reehal</strong>
-            </h1>
-            <div  className="typewriterEffect" >
-              <Type/>
-            </div>
-          </Col>
-        </Container>
-      </Container>
-    </section>
+        <h1 className="heading-name">
+          I'm
+          <strong className="main-name"> Sandeep Reehal</strong>
+        </h1>
+        <div  className="typewriterEffect" >
+          <Type/>
+        </div>
+      </Col>
+    </div>
   );
 }
 

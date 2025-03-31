@@ -13,13 +13,13 @@ function Footer() {
         <Col md="4"className="footer-copywright" >
         </Col>
         <Col md="4" className="footer-body">
-              <a
-                href="https://github.com/reehals"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub className="footer-icons"/>
-              </a>
+          <a
+            href="https://github.com/reehals"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub className="footer-icons"/>
+          </a>
         </Col>
       </Row>
     </div>

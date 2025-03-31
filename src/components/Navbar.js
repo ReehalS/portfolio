@@ -7,6 +7,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineTool,
 } from "react-icons/ai";
 
 function NavBar() {
@@ -18,7 +19,7 @@ function NavBar() {
             to="home"
             activeClass="active"
             spy={true}
-            offset={-50}
+            offset={-90}
             duration={500}
             className="nav-link"
           >
@@ -28,7 +29,7 @@ function NavBar() {
             to="about"
             activeClass="active"
             spy={true}
-            offset={-50}
+            offset={-90}
             duration={500}
             className="nav-link"
           >
@@ -38,11 +39,21 @@ function NavBar() {
             to="project"
             activeClass="active"
             spy={true}
-            offset={-50}
+            offset={-90}
             duration={500}
             className="nav-link"
           >
             <AiOutlineFundProjectionScreen /> Projects
+          </Link>
+          <Link
+            to="tools"
+            activeClass="active"
+            spy={true}
+            offset={-90}
+            duration={500}
+            className="nav-link"
+          >
+            <AiOutlineTool /> Tools
           </Link>
         </Nav>
       </Container>

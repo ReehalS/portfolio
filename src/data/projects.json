@@ -1,0 +1,85 @@
+[
+    {
+      "imgPath": "/assets/ASLTranslator.png",
+      "title": "ASL Alphabet Translator",
+      "extra": "Best Project Manager Winter 2025",
+      "description": "Live translator between American Sign Language (ASL) Alphabet signs and their corresponding letters.",
+      "demoLink": "https://asl-translator-ccc.streamlit.app/",
+      "ghLink": "https://github.com/ReehalS/ASL-Translator",
+      "type": ["Machine Learning"],
+      "location": ["Club"],
+      "techStack": ["Python"]
+    },
+    {
+      "imgPath": "/assets/CollaborativePlanner.png",
+      "title": "Collaborative Trip Planner",
+      "description": "Website to allow people to interactively plan trips together. You can invite others using unique join codes, create activities, and allow users to vote for desirable activities.",
+      "ghLink": "https://github.com/ReehalS/collaborative-trip-planner",
+      "demoPlaceholder": "Demo Coming Soon",
+      "type": ["Full Stack"],
+      "location": ["Personal"],
+      "techStack": ["Next.js"]
+    },
+    {
+      "imgPath": "/assets/SongGenreClassifier.png",
+      "title": "Song Genre Classifier",
+      "extra": "Best Executed Project Fall 2024",
+      "description": "Predict a song's genre purely from its audio file using a Random Forest Classifier.",
+      "demoLink": "https://songclassifiers.streamlit.app/",
+      "ghLink": "https://github.com/ReehalS/TeamTBD_SongClassifier",
+      "type": ["Machine Learning"],
+      "location": ["Club"],
+      "techStack": ["Python"]
+    },
+    {
+      "imgPath": "/assets/nilayHealth.png",
+      "title": "Nilay Health",
+      "extra": "Blackstone Ideas Competition Winner",
+      "description": "Website to help hospitals track patient medications and appointments, message patients reminding them of appointments and generate Prescriptions after appointments.",
+      "ghLink": "",
+      "demoPlaceholder": "Demo Unavailable",
+      "type": ["Full Stack"],
+      "location": ["Personal"],
+      "techStack": ["React"]
+    },
+    {
+      "imgPath": "/assets/dcmh.png",
+      "title": "Donation and Inventory Manager",
+      "extra": "HackDavis 2024 Prize Winner",
+      "description": "A website that facilitates both in-person item donations for Davis Community Meals and Housing, showing donors a table highlighting in demand items to ensure a balanced inventory. Admin users can track inventory levels and send email notifications for high-need items.",
+      "ghLink": "https://github.com/ReehalS/dcmh_hackdavis",
+      "demoLink": "https://dcmh-hackdavis.vercel.app/",
+      "type": ["Full Stack"],
+      "location": ["Hackathon"],
+      "techStack": ["React"]
+    },
+    {
+      "imgPath": "/assets/output-onlinepngtools.png",
+      "title": "Speech to Text Converter",
+      "description": "App built in React Native to convert speech to text and give an output with Company names and Stock price keywords, built for BullTrack's App.",
+      "ghLink": "https://github.com/ReehalS/BulltrackSTT",
+      "type": ["Mobile"],
+      "location": ["Work"],
+      "techStack": ["React-Native"]
+    },
+    {
+      "imgPath": "/assets/workout-site.png",
+      "title": "Workout Buddy",
+      "description": "Website built with React, Express and MongoDB to allow users to track their workouts.",
+      "ghLink": "https://github.com/ReehalS/workout-site",
+      "demoLink": "https://workoutbuddy-sr.vercel.app/",
+      "type": ["Full Stack"],
+      "location": ["Personal"],
+      "techStack": ["React"]
+    },
+    {
+      "imgPath": "/assets/breast-cancer-ROC.png",
+      "title": "Breast Cancer Detection",
+      "description": "Comparing 10 different ML models to find the best one for classification of breast cancer.",
+      "ghLink": "https://github.com/ReehalS/modelAccuracyTesting",
+      "type": ["Machine Learning"],
+      "location": ["Personal"],
+      "techStack": ["Python"]
+    }
+  ]
+  
