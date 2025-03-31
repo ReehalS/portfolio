@@ -246,6 +246,7 @@ button:focus {
 .tech-heading {
   background-color: var(--primary-color);
   color: var(--primary-color-text);
+  padding-inline: 60px;
 }
 
 @media (min-width: 1024px) {
