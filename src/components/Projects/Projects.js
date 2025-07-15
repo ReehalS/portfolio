@@ -37,10 +37,8 @@ function Projects() {
     <div className="project-container">
       <h1 className="section-heading">My Recent Work</h1>
       <p className="project-subheading">
-        Here is a list of my recent work, you can use the filters below to refine the list by project type, origin, and tech stack.
+        Here is a list of my recent work, please use filters from the drop-down to refine the list by project type, origin, and tech stack.
       </p>
-
-      {/* Dropdown Filters in a row */}
       <div className="project-filters">
         <div>
           <label className="type-select" style={{ fontWeight: "bold", marginRight: "5px" }}>

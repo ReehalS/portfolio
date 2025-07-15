@@ -14,7 +14,7 @@ function About() {
             <br />I am fluent in languages like
             <b className="blue"> C++, Java, Javascript, and Python</b>
             , and have worked extensively with frameworks like
-            <b className="blue"> React.js, Node.js, and Express.js</b>.
+            <b className="blue"> React, Next.js, and Express.js</b>.
             <br />
           </p>
         </Col>  
