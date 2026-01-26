@@ -7,11 +7,11 @@ function ProjectCard({ title, description, extra, imgPath, ghLink, demoLink, dem
     <div className="group h-full flex flex-col bg-dark rounded-xl border border-white/5 overflow-hidden hover:border-accent/20 transition-all duration-300 hover:-translate-y-1">
       {/* Image */}
       {imgPath && (
-        <div className="relative overflow-hidden aspect-video bg-dark-lighter">
+        <div className="relative overflow-hidden aspect-video bg-dark flex items-center justify-center">
           <img
             src={imgPath}
             alt={title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
           />
         </div>
       )}
