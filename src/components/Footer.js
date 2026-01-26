@@ -1,28 +1,23 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   return (
-    <div className="footer">
-      <Row>
-        <Col md="4" className="footer-madeby">
-          <h3>Made by Sandeep Reehal</h3>
-        </Col>
-        <Col md="4"className="footer-copywright" >
-        </Col>
-        <Col md="4" className="footer-body">
-          <a
-            href="https://github.com/reehals"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <AiFillGithub className="footer-icons"/>
-          </a>
-        </Col>
-      </Row>
-    </div>
+    <footer className="border-t border-white/5 bg-dark">
+      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span className="text-sm text-white/40">
+          Made by Sandeep Reehal
+        </span>
+        <a
+          href="https://github.com/reehals"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/40 hover:text-accent transition-colors"
+        >
+          <AiFillGithub className="text-xl" />
+        </a>
+      </div>
+    </footer>
   );
 }
 

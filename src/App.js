@@ -1,21 +1,16 @@
-// import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Techstack from "./components/About/Techstack";
-import Toolstack from "./components/About/Toolstack";
-import {
-  BrowserRouter as Router,
-} from "react-router-dom";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact";
 
-import "./style.css";
-import "./App.css";
-import FindMeOn from "./components/About/FindMeOn";
+import "./index.css";
+
 function App() {
   return (
-    <Router>
+    <div className="bg-dark min-h-screen">
       <Navbar />
       <main>
         <section id="home">
@@ -24,23 +19,18 @@ function App() {
         <section id="about">
           <About />
         </section>
-        <section id="project">
+        <section id="projects">
           <Projects />
         </section>
-        <div id="tools" className="tech-heading">
-          <h1 className="section-heading">
-            Languages, Frameworks, and Libraries I Use
-          </h1>
-          <Techstack />
-          <h1 className="section-heading">
-            Tools I Use
-          </h1>
-          <Toolstack />
-        </div>
-        <FindMeOn />
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
       <Footer />
-    </Router>
+    </div>
   );
 }
 

@@ -1,8 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4A7B9B;
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* Typewriter styling */
+.Typewriter__wrapper {
+  font-size: 1.5rem;
+  color: #47b7ff;
+  font-weight: 600;
+}
+
+.Typewriter__cursor {
+  font-size: 1.5rem;
+  color: #47b7ff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b596c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #47b7ff;
 }

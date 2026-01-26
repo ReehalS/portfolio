@@ -1,10 +1,10 @@
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiDevpost } from "react-icons/si";
-import { Col } from "react-bootstrap";
+import { AiFillGithub } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { SiDevpost } from 'react-icons/si';
+import { Col } from 'react-bootstrap';
 
-function FindMeOn() { 
-    return (
+function FindMeOn() {
+  return (
     <div className="about-social">
       <Col md={12}>
         <h1 className="section-heading">Find Me On</h1>
@@ -22,7 +22,7 @@ function FindMeOn() {
         
           <li className="social-icons">
             <a
-              href="https://www.linkedin.com/in/sandeep-reehal-385821263/"
+              href="https://www.linkedin.com/in/sandeep-reehal/"
               target="_blank"
               rel="noreferrer"
               className="icon-colour home-social-icons"
@@ -43,8 +43,7 @@ function FindMeOn() {
         </ul>
       </Col>
     </div>
-        
-    )
+  );
 }
 
 export default FindMeOn;

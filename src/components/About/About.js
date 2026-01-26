@@ -1,24 +1,52 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="about-div">
-      <Container fluid className="about-section" >
-        <Col md={8} className="about-description">
-          <p className="about-body">
-            I am a Computer Science and Engineering student at UC Davis who is passionate about <b className="blue"> Web Development and Machine Learning.</b>
-            <br />
-            I am a quick learner and a team player who is always looking for new challenges and opportunities to grow. 
-            <br />
-            <br />I am fluent in languages like
-            <b className="blue"> C++, Java, Javascript, and Python</b>
-            , and have worked extensively with frameworks like
-            <b className="blue"> React, Next.js, and Express.js</b>.
-            <br />
+    <div className="py-24 bg-dark">
+      <div className="max-w-6xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+            About Me
+          </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-accent to-accent-dark rounded-full mb-10" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="max-w-3xl"
+        >
+          <p className="text-lg text-white/80 leading-relaxed">
+            I am a Computer Science and Engineering student at UC Davis who is
+            passionate about{" "}
+            <span className="text-accent font-medium">
+              Web Development and Machine Learning
+            </span>
+            . I am a quick learner and a team player who is always looking for
+            new challenges and opportunities to grow.
           </p>
-        </Col>  
-      </Container>
+
+          <p className="text-lg text-white/80 leading-relaxed mt-6">
+            I am fluent in languages like{" "}
+            <span className="text-accent font-medium">
+              C++, Java, Javascript, and Python
+            </span>
+            , and have worked extensively with frameworks like{" "}
+            <span className="text-accent font-medium">
+              React, Next.js, and Express.js
+            </span>
+            .
+          </p>
+        </motion.div>
+      </div>
     </div>
   );
 }

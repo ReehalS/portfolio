@@ -3,7 +3,7 @@
       "imgPath": "/assets/ASLTranslator.png",
       "title": "ASL Alphabet Translator",
       "extra": "Best Project Manager Winter 2025",
-      "description": "Live translator between American Sign Language (ASL) Alphabet signs and their corresponding letters.",
+      "description": "Real-time ASL alphabet translator using CNN and Random Forest models achieving 95%+ accuracy. Built a video inference pipeline with MediaPipe and OpenCV, reducing latency by 40% using TFLite.",
       "demoLink": "https://asl-translator-ccc.streamlit.app/",
       "ghLink": "https://github.com/ReehalS/ASL-Translator",
       "type": ["Machine Learning"],
@@ -11,9 +11,27 @@
       "techStack": ["Python"]
     },
     {
+      "title": "Loadstone",
+      "description": "Mobile-first decision-support app combining task planning, wellbeing signals, and AI tools. NestJS backend with Azure Cosmos DB, OIDC authentication via Entra External ID, and Azure OpenAI integration with schema-validated tool-calling.",
+      "ghLink": "",
+      "demoPlaceholder": "In Development",
+      "type": ["Mobile", "Full Stack"],
+      "location": ["Personal"],
+      "techStack": ["React-Native"]
+    },
+    {
+      "title": "HackDavis Platform",
+      "description": "Technical platform for UC Davis' largest student-run hackathon (1000+ participants). Built the judging platform, judge-to-team pairing algorithms, event calendar system, and a generative AI chatbot with RAG-based knowledge system.",
+      "ghLink": "",
+      "demoPlaceholder": "Internal Tool",
+      "type": ["Full Stack"],
+      "location": ["Club"],
+      "techStack": ["React"]
+    },
+    {
       "imgPath": "/assets/CollaborativePlanner.png",
       "title": "Collaborative Trip Planner",
-      "description": "Website to allow people to interactively plan trips together. You can invite others using unique join codes, create activities, and allow users to vote for desirable activities.",
+      "description": "Website to allow people to interactively plan trips together. Invite others using unique join codes, create activities, and allow users to vote for desirable activities.",
       "ghLink": "https://github.com/ReehalS/collaborative-trip-planner",
       "demoPlaceholder": "Demo Coming Soon",
       "type": ["Full Stack"],
@@ -35,7 +53,7 @@
       "imgPath": "/assets/nilayHealth.png",
       "title": "Nilay Health",
       "extra": "Blackstone Ideas Competition Winner",
-      "description": "Website to help hospitals track patient medications and appointments, message patients reminding them of appointments and generate Prescriptions after appointments.",
+      "description": "Full-stack patient management system for hospitals. Features include patient records, appointment and medication scheduling, automated prescription generation, and Twilio SMS reminders that reduced missed appointments by ~25% for 400+ patients weekly.",
       "ghLink": "",
       "demoPlaceholder": "Demo Unavailable",
       "type": ["Full Stack"],
@@ -46,7 +64,7 @@
       "imgPath": "/assets/dcmh.png",
       "title": "Donation and Inventory Manager",
       "extra": "HackDavis 2024 Prize Winner",
-      "description": "A website that facilitates both in-person item donations for Davis Community Meals and Housing, showing donors a table highlighting in demand items to ensure a balanced inventory. Admin users can track inventory levels and send email notifications for high-need items.",
+      "description": "Website facilitating in-person item donations for Davis Community Meals and Housing. Highlights in-demand items to ensure balanced inventory, with admin controls for tracking levels and sending email notifications for high-need items.",
       "ghLink": "https://github.com/ReehalS/dcmh_hackdavis",
       "demoLink": "https://dcmh-hackdavis.vercel.app/",
       "type": ["Full Stack"],
@@ -56,21 +74,11 @@
     {
       "imgPath": "/assets/output-onlinepngtools.png",
       "title": "Speech to Text Converter",
-      "description": "App built in React Native to convert speech to text and give an output with Company names and Stock price keywords, built for BullTrack's App.",
+      "description": "React Native voice assistant for a stock advice app with local speech-to-text conversion. Integrated on-device speech recognition with pronunciation variants for 150+ companies.",
       "ghLink": "https://github.com/ReehalS/BulltrackSTT",
       "type": ["Mobile"],
       "location": ["Work"],
       "techStack": ["React-Native"]
-    },
-    {
-      "imgPath": "/assets/workout-site.png",
-      "title": "Workout Buddy",
-      "description": "Website built with React, Express and MongoDB to allow users to track their workouts.",
-      "ghLink": "https://github.com/ReehalS/workout-site",
-      "demoLink": "https://workoutbuddy-sr.vercel.app/",
-      "type": ["Full Stack"],
-      "location": ["Personal"],
-      "techStack": ["React"]
     },
     {
       "imgPath": "/assets/breast-cancer-ROC.png",
@@ -82,4 +90,3 @@
       "techStack": ["Python"]
     }
   ]
-  
