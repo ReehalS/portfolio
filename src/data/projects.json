@@ -1,50 +1,95 @@
 [
   {
+    "imgPath": "/assets/PathIQ.png",
+    "title": "PathIQ",
+    "description": "AI-powered career intelligence platform that replaces anecdotal career advice with real-time labor market data and AI-driven analysis for undergraduates. Combines real-time labor market data (salary percentiles, job openings, growth trends) with AI-driven trade-off analysis to compare career paths, surface insights, and provide personalized recommendations through an interactive dashboard and natural-language career chat.",
+    "ghLink": [{ "url": "https://github.com/ReehalS/pathiq" }],
+    "demoLink": [{ "url": "https://pathiq.sandeepreehal.com" }],
+    "type": ["Full Stack", "AI"],
+    "location": ["Hackathon"],
+    "techStack": ["Next.js", "Python", "Supabase"]
+  },
+  {
+    "title": "Photography Scene Finder",
+    "description": "Composition-scoring ML models to evaluate image aesthetics and suggest improved angles. Built the backend pipeline for image ingestion, feature extraction, and real-time scoring. Improved recommendation accuracy by refining model architecture and optimizing training data workflows.",
+    "ghLink": [],
+    "demoPlaceholder": "In Development",
+    "type": ["Machine Learning", "Mobile"],
+    "location": ["Club"],
+    "techStack": ["Python", "React-Native", "TensorFlow", "Firebase"]
+  },
+  {
+    "title": "Loadstone",
+    "description": "Mobile-first decision-support app for students, combining task planning, wellbeing signals, and AI tools. NestJS backend with Azure Cosmos DB, OIDC authentication via Entra External ID, and Azure OpenAI integration with schema-validated tool-calling.",
+    "ghLink": [{ "url": "https://github.com/randomcrafter20/Loadstone" }],
+    "demoPlaceholder": "In Development",
+    "type": ["Mobile", "Full Stack", "AI"],
+    "location": ["Hackathon"],
+    "techStack": ["React-Native", "NestJS", "Azure"]
+  },
+  {
     "imgPath": "/assets/ASLTranslator.png",
     "title": "ASL Alphabet Translator",
     "extra": "Best Project Manager Winter 2025",
     "description": "Real-time ASL alphabet translator using CNN and Random Forest models achieving 95%+ accuracy. Built a video inference pipeline with MediaPipe and OpenCV, reducing latency by 40% using TFLite.",
-    "demoLink": "https://asl-translator-ccc.streamlit.app/",
-    "ghLink": "https://github.com/ReehalS/ASL-Translator",
+    "demoLink": [{ "url": "https://asl-translator-ccc.streamlit.app/" }],
+    "ghLink": [{ "url": "https://github.com/ReehalS/ASL-Translator" }],
     "type": ["Machine Learning"],
     "location": ["Club"],
     "techStack": ["Python"]
   },
   {
-    "title": "Loadstone",
-    "description": "Mobile-first decision-support app combining task planning, wellbeing signals, and AI tools. NestJS backend with Azure Cosmos DB, OIDC authentication via Entra External ID, and Azure OpenAI integration with schema-validated tool-calling.",
-    "ghLink": "",
-    "demoPlaceholder": "In Development",
-    "type": ["Mobile", "Full Stack", "AI"],
-    "location": ["Personal"],
-    "techStack": ["React-Native"]
+    "title": "Algorithmic Trading Platform",
+    "imgPath": "/assets/StratTrader.png",
+    "description": "Desktop trading platform with event-driven strategy execution for algorithmic trading. Integrated live market data via Fyers SDK and implemented moving average and volume-driven trading strategies with real-time execution capabilities.",
+    "ghLink": [],
+    "demoPlaceholder": "Proprietary",
+    "type": ["Full Stack"],
+    "location": ["Work"],
+    "techStack": ["Java"]
   },
   {
-    "title": "HackDavis Platform",
-    "description": "Technical platform for UC Davis' largest student-run hackathon (1000+ participants). Built the judging platform, judge-to-team pairing algorithms, event calendar system, and a generative AI chatbot with RAG-based knowledge system.",
-    "ghLink": "",
-    "demoPlaceholder": "Internal Tool",
+    "title": "HackDavis",
+    "description": "Core technical platform powering UC Davis' largest student-run hackathon (1000+ participants). Designed and implemented judge-to-team pairing algorithms, event calendar infrastructure, and a RAG-based generative AI chatbot for participant support. Led backend automation for ticketing and communications, migrating away from Mailchimp/EmailJS to a custom Nodemailer-based system integrated with Tito, reducing per-email latency from 2.7s to 1.2s via parallelized workflows while lowering operational costs.",
+    "ghLink": [
+      {
+        "label": "Hub GH",
+        "url": "https://github.com/HackDavis/hackdavis-hub"
+      },
+      {
+        "label": "2026 GH",
+        "url": "https://github.com/HackDavis/website-2026"
+      },
+      { "label": "2025 GH", "url": "https://github.com/HackDavis/website-2025" }
+    ],
+    "demoLink": [
+      { "label": "HackDavis Hub", "url": "https://hub.hackdavis.io/" },
+      { "label": "2026", "url": "https://hackdavis.io" },
+      { "label": "2025", "url": "https://2025.hackdavis.io/" }
+    ],
     "type": ["Full Stack", "AI"],
     "location": ["Club"],
-    "techStack": ["Next.js"]
+    "techStack": ["Next.js", "TypeScript", "MongoDB"]
   },
   {
     "imgPath": "/assets/CollaborativePlanner.png",
-    "title": "Collaborative Trip Planner",
+    "title": "Collaborative Trip Planning Platform",
     "description": "Website to allow people to interactively plan trips together. Invite others using unique join codes, create activities, and allow users to vote for desirable activities.",
-    "ghLink": "https://github.com/ReehalS/collaborative-trip-planner",
+    "ghLink": [
+      { "url": "https://github.com/ReehalS/collaborative-trip-planner" }
+    ],
     "demoPlaceholder": "Demo Coming Soon",
-    "type": ["Full Stack"],
+    "type": ["Full Stack", "AI"],
     "location": ["Personal"],
-    "techStack": ["Next.js"]
+    "techStack": ["Next.js", "TypeScript", "PostgreSQL"]
   },
   {
     "imgPath": "/assets/SongGenreClassifier.png",
     "title": "Song Genre Classifier",
     "extra": "Best Executed Project Fall 2024",
     "description": "Predict a song's genre purely from its audio file using a Random Forest Classifier.",
-    "demoLink": "https://songclassifiers.streamlit.app/",
-    "ghLink": "https://github.com/ReehalS/TeamTBD_SongClassifier",
+    "demoLink": [{ "url": "https://songclassifiers.streamlit.app/" }],
+    "ghLink": [{ "url": "https://github.com/ReehalS/TeamTBD_SongClassifier" }],
     "type": ["Machine Learning"],
     "location": ["Club"],
     "techStack": ["Python"]
@@ -54,37 +99,48 @@
     "title": "Nilay Health",
     "extra": "Blackstone Ideas Competition Winner",
     "description": "Full-stack patient management system for hospitals. Features include patient records, appointment and medication scheduling, automated prescription generation, and Twilio SMS reminders that reduced missed appointments by ~25% for 400+ patients weekly.",
-    "ghLink": "",
+    "ghLink": [],
     "demoPlaceholder": "Demo Unavailable",
     "type": ["Full Stack"],
     "location": ["Personal"],
-    "techStack": ["React"]
+    "techStack": ["React", "MongoDB", "Firebase"]
   },
   {
     "imgPath": "/assets/dcmh.png",
     "title": "Donation and Inventory Manager",
     "extra": "HackDavis 2024 Prize Winner",
     "description": "Website facilitating in-person item donations for Davis Community Meals and Housing. Highlights in-demand items to ensure balanced inventory, with admin controls for tracking levels and sending email notifications for high-need items.",
-    "ghLink": "https://github.com/ReehalS/dcmh_hackdavis",
-    "demoLink": "https://dcmh-hackdavis.vercel.app/",
+    "ghLink": [{ "url": "https://github.com/ReehalS/dcmh_hackdavis" }],
+    "demoLink": [{ "url": "https://dcmh-hackdavis.vercel.app/" }],
     "type": ["Full Stack"],
     "location": ["Hackathon"],
-    "techStack": ["React"]
+    "techStack": ["React", "MongoDB"]
   },
   {
     "imgPath": "/assets/output-onlinepngtools.png",
-    "title": "Speech to Text Converter",
+    "title": "On-Device Speech-to-Text Engine",
     "description": "React Native voice assistant for a stock advice app with local speech-to-text conversion. Integrated on-device speech recognition with pronunciation variants for 150+ companies.",
-    "ghLink": "https://github.com/ReehalS/BulltrackSTT",
+    "ghLink": [{ "url": "https://github.com/ReehalS/BulltrackSTT" }],
     "type": ["Mobile"],
     "location": ["Work"],
     "techStack": ["React-Native"]
   },
   {
+    "imgPath": "/assets/thrift-store.png",
+    "title": "Thrift Store Goods Tracker",
+    "extra": "",
+    "description": "Deployed TensorFlow models on a Raspberry Pi to classify clothing types and improve thrift store inventory tracking. Built a front-end system for managing inventory and accelerating the checkout process, streamlining thrift store operations by automating item classification.",
+    "ghLink": [{ "url": "https://github.com/JayJ104/aggie-reuse" }],
+    "hide": true,
+    "type": ["Machine Learning", "Full Stack"],
+    "location": ["Hackathon"],
+    "techStack": ["Python", "React"]
+  },
+  {
     "imgPath": "/assets/breast-cancer-ROC.png",
-    "title": "Breast Cancer Detection",
+    "title": "Breast Cancer Classification Benchmarking",
     "description": "Comparing 10 different ML models to find the best one for classification of breast cancer.",
-    "ghLink": "https://github.com/ReehalS/modelAccuracyTesting",
+    "ghLink": [{ "url": "https://github.com/ReehalS/modelAccuracyTesting" }],
     "type": ["Machine Learning"],
     "location": ["Personal"],
     "techStack": ["Python"]

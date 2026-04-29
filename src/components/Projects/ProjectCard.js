@@ -1,8 +1,49 @@
-import React from "react";
-import { BsGithub } from "react-icons/bs";
-import { FiExternalLink } from "react-icons/fi";
+import React from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { FiExternalLink } from 'react-icons/fi';
 
-function ProjectCard({ title, description, extra, imgPath, ghLink, demoLink, demoPlaceholder }) {
+function normalizeLinks(linkOrList, defaultLabel) {
+  if (!linkOrList) {
+    return [];
+  }
+
+  const list = Array.isArray(linkOrList) ? linkOrList : [linkOrList];
+
+  return list
+    .filter(Boolean)
+    .map((item, index) => {
+      if (typeof item === 'string') {
+        const label =
+          list.length > 1 ? `${defaultLabel} ${index + 1}` : defaultLabel;
+        return { url: item, label };
+      }
+
+      if (item && typeof item === 'object') {
+        const label = item.label
+          ? item.label
+          : list.length > 1
+            ? `${defaultLabel} ${index + 1}`
+            : defaultLabel;
+        return { url: item.url, label };
+      }
+
+      return null;
+    })
+    .filter((item) => item && item.url);
+}
+
+function ProjectCard({
+  title,
+  description,
+  extra,
+  imgPath,
+  ghLink,
+  demoLink,
+  demoPlaceholder,
+}) {
+  const ghLinks = normalizeLinks(ghLink, 'GitHub');
+  const demoLinks = normalizeLinks(demoLink, 'Demo');
+
   return (
     <div className="group h-full flex flex-col bg-dark rounded-xl border border-white/5 overflow-hidden hover:border-accent/20 transition-all duration-300 hover:-translate-y-1">
       {/* Image */}
@@ -11,7 +52,7 @@ function ProjectCard({ title, description, extra, imgPath, ghLink, demoLink, dem
           <img
             src={imgPath}
             alt={title}
-            className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
       )}
@@ -31,30 +72,32 @@ function ProjectCard({ title, description, extra, imgPath, ghLink, demoLink, dem
         </p>
 
         {/* Buttons */}
-        <div className="flex items-center gap-3 mt-4 pt-4 border-t border-white/5">
-          {ghLink && (
+        <div className="flex flex-wrap items-center gap-3 mt-4 pt-4 border-t border-white/5">
+          {ghLinks.map((link) => (
             <a
-              href={ghLink}
+              key={`gh-${link.url}`}
+              href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-white/70 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg transition-colors"
             >
               <BsGithub />
-              Code
+              {link.label}
             </a>
-          )}
-          {demoLink && (
+          ))}
+          {demoLinks.map((link) => (
             <a
-              href={demoLink}
+              key={`demo-${link.url}`}
+              href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-accent hover:text-white bg-accent/10 hover:bg-accent/20 rounded-lg transition-colors"
             >
               <FiExternalLink />
-              Demo
+              {link.label}
             </a>
-          )}
-          {demoPlaceholder && !demoLink && (
+          ))}
+          {demoPlaceholder && demoLinks.length === 0 && (
             <span className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-white/30 bg-white/5 rounded-lg">
               <FiExternalLink />
               {demoPlaceholder}

@@ -133,8 +133,8 @@ function Home() {
             className="mt-10 flex flex-wrap gap-8"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">25+</div>
-              <div className="text-sm text-white/60 mt-1">Projects Built</div>
+              <div className="text-3xl font-bold text-accent">4+</div>
+              <div className="text-sm text-white/60 mt-1">Years Experience</div>
             </div>
             <div className="w-px bg-white/10" />
             <div className="text-center">

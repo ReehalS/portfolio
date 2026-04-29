@@ -1,11 +1,23 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import ProjectCard from "./ProjectCard";
-import projects from "../../data/projects.json";
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import ProjectCard from './ProjectCard';
+import projects from '../../data/projects.json';
 
-const allTypes = ["All", "Full Stack", "Machine Learning", "Mobile"];
-const allLocations = ["All", "Personal", "Club", "Work", "Hackathon"];
-const allTechs = ["All", "React", "Next.js", "Python", "React-Native"];
+const allTypes = ['All', 'Full Stack', 'AI', 'Machine Learning', 'Mobile'];
+const allLocations = ['All', 'Personal', 'Club', 'Work', 'Hackathon'];
+const allTechs = [
+  'All',
+  'Next.js',
+  'Python',
+  'React',
+  'React-Native',
+  'Java',
+  'TypeScript',
+  'MongoDB',
+  'PostgreSQL',
+  'Firebase',
+  'Azure',
+];
 
 function FilterGroup({ label, options, selected, onSelect }) {
   return (
@@ -14,11 +26,13 @@ function FilterGroup({ label, options, selected, onSelect }) {
       {options.map((option) => (
         <button
           key={option}
-          onClick={() => onSelect(option)}
+          onClick={() =>
+            onSelect(selected === option && option !== 'All' ? 'All' : option)
+          }
           className={`px-3 py-1.5 text-sm rounded-lg font-medium transition-all duration-200 cursor-pointer ${
             selected === option
-              ? "bg-accent text-white"
-              : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white/80"
+              ? 'bg-accent text-white'
+              : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white/80'
           }`}
         >
           {option}
@@ -29,19 +43,23 @@ function FilterGroup({ label, options, selected, onSelect }) {
 }
 
 function Projects() {
-  const [selectedType, setSelectedType] = useState("All");
-  const [selectedLocation, setSelectedLocation] = useState("All");
-  const [selectedTech, setSelectedTech] = useState("All");
+  const [selectedType, setSelectedType] = useState('All');
+  const [selectedLocation, setSelectedLocation] = useState('All');
+  const [selectedTech, setSelectedTech] = useState('All');
 
   const filteredProjects = projects.filter((project) => {
+    if (project.hide) {
+      return false;
+    }
+
     const matchType =
-      selectedType === "All" ||
+      selectedType === 'All' ||
       (project.type && project.type.includes(selectedType));
     const matchLocation =
-      selectedLocation === "All" ||
+      selectedLocation === 'All' ||
       (project.location && project.location.includes(selectedLocation));
     const matchTech =
-      selectedTech === "All" ||
+      selectedTech === 'All' ||
       (project.techStack && project.techStack.includes(selectedTech));
     return matchType && matchLocation && matchTech;
   });
@@ -52,7 +70,7 @@ function Projects() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
